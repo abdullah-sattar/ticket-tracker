@@ -1,12 +1,11 @@
 import React from "react";
 import "./Employee.scss";
-import team from "../../data/team";
 
-const Employee = () => {
+const Employee = (props) => {
 
-    // const { name, role } = props;
+    const { details } = props;
 
-    const nameAndRole = team.map((employee) => {
+    const nameAndRole = details.map((employee) => {
         return (<>
             <div>
                 <p>Employee: {employee.name}</p>
@@ -18,12 +17,15 @@ const Employee = () => {
 
     // const names = name.map((empName) => {
     //     return <p>Employee:{empName}</p>
-    // }) 
+    //     const roles = role.map((empRole) => {
+    //         return <p>Role:{empRole}</p>
+    //     })
+    //     return roles
+    // })
 
-    // const roles = role.map((empRole) => {
-    //     return <p>Role:{empRole}</p>
-    // }) 
 
+
+    // return <div className="employeeCard">{nameAndRole}</div>
     return <div className="employeeCard">{nameAndRole}</div>
 }
 
