@@ -10,32 +10,7 @@ const App = () => {
     team.map((employee) => {
     return <Employee key = {employee.id} employee = {employee }/>
   })
-
-
-  // const employeeDetails = team.map((employee) => {
-  //   const container = {}
-
-  //   container.name = employee.name;
-  //   container.role = employee.role;
-    
-  //   return container;
-    
-  // });
-
-  // console.log(employeeDetails);
-
-  // const employeeRole = team.map((employee) => {
-  //   return employee.role
-  // })
-
-  // const nameAndRole = team.map((employee) => {
-  //   return (<>
-  //     <p>Employee:{employee.name}</p>
-  //     <p>Role:{employee.role}</p>
-  //   </>
-  //   )
-  // })
-
+  
   return (<>
     <div className="app">
       <div>
@@ -43,7 +18,6 @@ const App = () => {
       </div>
       <section className="employeeCard-container">
         {createEmployeeCards()}
-        {/* // <Employee details={employeeDetails} /> */}
       </section>
     </div>
   </>
