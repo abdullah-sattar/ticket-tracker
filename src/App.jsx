@@ -5,17 +5,24 @@ import team from "./data/team";
 
 const App = () => {
 
-  const employeeDetails = team.map((employee) => {
-    const container = {}
 
-    container.name = employee.name;
-    container.role = employee.role;
-    
-    return container;
-    
-  });
+  const createEmployeeCards = () => 
+    team.map((employee) => {
+    return <Employee key = {employee.id} employee = {employee }/>
+  })
 
-  console.log(employeeDetails);
+
+  // const employeeDetails = team.map((employee) => {
+  //   const container = {}
+
+  //   container.name = employee.name;
+  //   container.role = employee.role;
+    
+  //   return container;
+    
+  // });
+
+  // console.log(employeeDetails);
 
   // const employeeRole = team.map((employee) => {
   //   return employee.role
@@ -35,7 +42,8 @@ const App = () => {
         <Header />
       </div>
       <section className="employeeCard-container">
-        <Employee details={employeeDetails} />
+        {createEmployeeCards()}
+        {/* // <Employee details={employeeDetails} /> */}
       </section>
     </div>
   </>
