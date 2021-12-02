@@ -5,6 +5,7 @@
     align-items: center;
     margin-bottom: 15px;
     background-color: #E9C46A;
+    box-shadow: 5px 5px 20px #5c5c5c;
 
     h4 {
         background-color: #E9C46A;
@@ -24,7 +25,9 @@
         &__btn {
             height: fit-content;
             background-color: #F4A261;
+            border: none;
             border-radius: 10px;
+            box-shadow: 5px 5px 5px #5c5c5c;
         }
     }
 }
