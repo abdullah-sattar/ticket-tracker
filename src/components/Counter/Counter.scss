@@ -1,0 +1,30 @@
+.container {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #E9C46A;
+
+    h4 {
+        background-color: #E9C46A;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        background-color: #E9C46A;
+
+        &__number {
+            background-color: #E9C46A;
+        }
+
+        &__btn {
+            height: fit-content;
+            background-color: #F4A261;
+            border-radius: 10px;
+        }
+    }
+}

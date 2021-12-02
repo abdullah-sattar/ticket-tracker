@@ -1,5 +1,23 @@
 .employeeCard {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #F4A261;
+    border-radius: 15px;
+    width: 250px;
+    height: 300px;
+    background-color: #2A9D8F;
+
+    h2 {
+        background-color: #2A9D8F;
+    }
+
+    h4 {
+        background-color: #2A9D8F;
+    }
+
+    &__counter {
+        background-color: #E9C46A;
+    }
 }

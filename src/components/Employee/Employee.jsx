@@ -1,5 +1,6 @@
 import React from "react";
 import "./Employee.scss";
+import Counter from "../Counter/Counter";
 
 const Employee = (props) => {
 
@@ -7,9 +8,10 @@ const Employee = (props) => {
 
     const nameAndRole = details.map((employee) => {
         return (<>
-            <div>
-                <p>Employee: {employee.name}</p>
-                <p>Role: {employee.role}</p>
+            <div className="employeeCard">
+                <h2>{employee.name}</h2>
+                <h4>{employee.role}</h4>
+                <Counter />
             </div>
         </>
         )
@@ -26,7 +28,12 @@ const Employee = (props) => {
 
 
     // return <div className="employeeCard">{nameAndRole}</div>
-    return <div className="employeeCard">{nameAndRole}</div>
+    return <>
+        {/* <div className="employeeCard">
+           
+        </div>  */}
+        {nameAndRole}
+    </>
 }
 
 export default Employee;
